@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Sayfa() {
-    Row{
+  /*  Row{
         Text(text = "Merhaba")
         Box(modifier = Modifier
             .size(80.dp)
@@ -66,8 +66,31 @@ fun Sayfa() {
         Box(modifier = Modifier
             .size(80.dp)
             .background(Color.Blue))
-    }
+    }*/
 
+    Box{
+        Box(modifier = Modifier
+            .size(400.dp)
+            .background(Color.Black))
+    Column {
+        Box(modifier = Modifier
+            .size(100.dp)
+            .background(Color.Red))
+        Box(modifier = Modifier
+            .size(100.dp)
+            .background(Color.Green))
+        Row {
+            Box(modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue))
+            Box(modifier = Modifier
+                .size(100.dp)
+                .background(Color.Yellow))
+            
+        }
+        
+    }
+    }
 }
 
 @Preview(showBackground = true)
