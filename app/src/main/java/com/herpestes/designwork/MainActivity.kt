@@ -9,6 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
@@ -31,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Sayfa() {
-  /*  Row{
+    /*  Row{
         Text(text = "Merhaba")
         Box(modifier = Modifier
             .size(80.dp)
@@ -68,7 +69,7 @@ fun Sayfa() {
             .background(Color.Blue))
     }*/
 
-   /* Box{
+    /* Box{
         Box(modifier = Modifier
             .size(400.dp)
             .background(Color.Black))
@@ -91,7 +92,7 @@ fun Sayfa() {
         
     }
     }*/
-  /*  Box{
+    /*  Box{
         Column(verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxHeight()) {
             Box(modifier = Modifier
                 .size(80.dp)
@@ -103,7 +104,7 @@ fun Sayfa() {
                 .size(100.dp)
                 .background(Color.Blue))
         }
-    }*/
+    }
     Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()){
             Box(modifier = Modifier
                 .size(80.dp)
@@ -114,9 +115,42 @@ fun Sayfa() {
             Box(modifier = Modifier
                 .size(100.dp)
                 .background(Color.Blue))
-        }
+        }*/
+    /*Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Box(
+            modifier = Modifier
+                .size(80.dp)
+                .background(Color.Red)
+        )
+        Box(
+            modifier = Modifier
+                .size(50.dp)
+                .background(Color.Green)
+        )
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue)
+        )
+    }*/
+    Column(modifier = Modifier.fillMaxSize()) {
+        Box(
+            modifier = Modifier
+                .size(80.dp)
+                .background(Color.Red)
+        )
+        Box(
+            modifier = Modifier
+                .size(50.dp)
+                .background(Color.Green)
+        )
+        Box(
+            modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue)
+        )
     }
-
+}
 
 @Preview(showBackground = true)
 @Composable
