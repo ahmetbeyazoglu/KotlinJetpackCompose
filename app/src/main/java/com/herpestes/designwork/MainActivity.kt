@@ -68,7 +68,7 @@ fun Sayfa() {
             .background(Color.Blue))
     }*/
 
-    Box{
+   /* Box{
         Box(modifier = Modifier
             .size(400.dp)
             .background(Color.Black))
@@ -90,8 +90,33 @@ fun Sayfa() {
         }
         
     }
+    }*/
+  /*  Box{
+        Column(verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxHeight()) {
+            Box(modifier = Modifier
+                .size(80.dp)
+                .background(Color.Red))
+            Box(modifier = Modifier
+                .size(50.dp)
+                .background(Color.Green))
+            Box(modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue))
+        }
+    }*/
+    Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()){
+            Box(modifier = Modifier
+                .size(80.dp)
+                .background(Color.Red))
+            Box(modifier = Modifier
+                .size(50.dp)
+                .background(Color.Green))
+            Box(modifier = Modifier
+                .size(100.dp)
+                .background(Color.Blue))
+        }
     }
-}
+
 
 @Preview(showBackground = true)
 @Composable
