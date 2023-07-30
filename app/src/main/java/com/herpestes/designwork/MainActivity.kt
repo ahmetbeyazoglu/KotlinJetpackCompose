@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -12,8 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.herpestes.designwork.ui.theme.DesignWorkTheme
 
 class MainActivity : ComponentActivity() {
@@ -133,7 +136,7 @@ fun Sayfa() {
                 .background(Color.Blue)
         )
     }*/
-    Column(modifier = Modifier.fillMaxSize()) {
+    /*Column(modifier = Modifier.fillMaxSize()) {
         Box(
             modifier = Modifier
                 .size(80.dp)
@@ -149,10 +152,30 @@ fun Sayfa() {
                 .size(100.dp)
                 .background(Color.Blue)
         )
+    }*/
+
+    /*Box(modifier = Modifier
+        .size(200.dp)
+        .background(Color.Red)){
+        Text(text = "Merhaba", modifier = Modifier.align(Alignment.BottomCenter))
+    }*/
+
+    Column(modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.SpaceEvenly,
+        horizontalAlignment = Alignment.CenterHorizontally){
+        
+        Text(text = stringResource(id = R.string.textyazi), fontSize = 50.sp)
+        Button(onClick = { /*TODO*/ }) {
+                Text(text = stringResource(id = R.string.buttonyazi), fontSize = 24.sp)
+        }
+
     }
+
+
+
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, locale = "tr")
 @Composable
 fun DefaultPreview() {
     DesignWorkTheme {
